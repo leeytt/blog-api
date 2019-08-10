@@ -1,0 +1,16 @@
+#application.yml配置文件中严格区别缩进空格
+spring:
+  datasource:
+    # 连接池类型 配置
+    type: com.zaxxer.hikari.HikariDataSource
+    # MySQL 配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/my_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+
+# Mybatis 配置
+mybatis:
+  mapper-locations: classpath:com/leeyunt/blog_api/sql/*.xml
+  type-aliases-package: classpath:com.leeyunt.blog_api.entity
+
