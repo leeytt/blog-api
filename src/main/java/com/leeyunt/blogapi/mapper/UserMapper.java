@@ -8,12 +8,8 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 public interface UserMapper {
-    /**
-     * 查询所有信息
-     * @return 管理员列表
-     * */
 
-    @Select("SELECT * FROM admin")
+    @Select("SELECT * FROM user")
     @Results({
             @Result(property = "username", column = "username"),
             @Result(property = "password", column = "password")

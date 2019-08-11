@@ -11,9 +11,9 @@
 
     <!-- 项目信息 -->
     <groupId>com.leeyunt</groupId>
-    <artifactId>blog_api</artifactId>
+    <artifactId>blog-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>blog_api</name>
+    <name>blog-api</name>
     <description>blog-api project for Spring Boot</description>
 
     <!-- 属性配置 -->
@@ -30,7 +30,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- mybatis依赖 -->
+        <!-- mybatis依赖 -->  
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>

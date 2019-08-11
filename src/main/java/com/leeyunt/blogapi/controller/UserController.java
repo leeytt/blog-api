@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/Admin")
+@RequestMapping(value = "/User")
 public class UserController {
     @Resource
     private UserService userService;
