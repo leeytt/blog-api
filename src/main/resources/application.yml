@@ -11,6 +11,6 @@ spring:
 
 # Mybatis 配置
 mybatis:
-  mapper-locations: classpath:com/leeyunt/blog_api/sql/*.xml
-  type-aliases-package: classpath:com.leeyunt.blog_api.entity
+  mapper-locations: classpath:com/leeyunt/blog-api/sql/*.xml
+  type-aliases-package: classpath:com.leeyunt.blog-api.entity
 

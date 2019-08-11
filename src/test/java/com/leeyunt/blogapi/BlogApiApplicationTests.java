@@ -1,4 +1,4 @@
-package com.leeyunt.blog_api;
+package com.leeyunt.blogapi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
