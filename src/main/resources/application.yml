@@ -3,7 +3,7 @@ spring:
   datasource:
     # 连接池类型 配置
     type: com.zaxxer.hikari.HikariDataSource
-    # MySQL数据源 配置
+    # MySQL 配置
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/my_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
@@ -11,9 +11,6 @@ spring:
 
 # Mybatis 配置
 mybatis:
-  type-aliases-package: classpath:com.leeyunt.blogapi.entity
-  mapper-locations: classpath:com/leeyunt/blogapi/sql/*.xml
+  mapper-locations: classpath:com/leeyunt/blog-api/sql/*.xml
+  type-aliases-package: classpath:com.leeyunt.blog-api.entity
 
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #这个配置会将执行的sql打印出来
