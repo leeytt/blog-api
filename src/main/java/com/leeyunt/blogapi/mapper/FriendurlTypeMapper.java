@@ -1,16 +1,16 @@
 package com.leeyunt.blogapi.mapper;
 
-import com.leeyunt.blogapi.entity.User;
+import com.leeyunt.blogapi.entity.FriendurlType;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * 管理员表 Mapper 接口
+ * 友链类型表 Mapper 接口
  * </p>
  *
  * @author leeyunt
  * @since 2019-08-13
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface FriendurlTypeMapper extends BaseMapper<FriendurlType> {
 
 }

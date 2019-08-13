@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 管理员表
+ * 友链表
  * </p>
  *
  * @author leeyunt
@@ -19,40 +19,35 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class User implements Serializable {
+public class Friendurl implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 用户id
+     * 友链id
      */
-    @TableId(value = "user_id", type = IdType.AUTO)
-    private Integer userId;
+    @TableId(value = "friendurl_id", type = IdType.AUTO)
+    private Integer friendurlId;
 
     /**
-     * 账号
+     * 友链名称
      */
-    private String username;
+    private String name;
 
     /**
-     * 密码
+     * 对应链接
      */
-    private String password;
+    private String url;
 
     /**
-     * 秘钥
+     * 友链类型id
      */
-    private String salt;
+    private Integer typeId;
 
     /**
-     * access_token
+     * 状态，1-可用，0-删除，默认1
      */
-    private String accessToken;
-
-    /**
-     * token有效期至
-     */
-    private Integer tokenExpiresIn;
+    private Boolean status;
 
     /**
      * 创建时间
@@ -60,14 +55,14 @@ public class User implements Serializable {
     private LocalDateTime createTime;
 
     /**
-     * 状态，1为正常，默认1
+     * 更新时间
      */
-    private Boolean status;
+    private LocalDateTime updateTime;
 
     /**
-     * 最后登录时间
+     * 删除时间
      */
-    private LocalDateTime lastLoginTime;
+    private LocalDateTime deleteTime;
 
 
 }

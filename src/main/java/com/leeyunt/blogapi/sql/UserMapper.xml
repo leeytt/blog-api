@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
-
-<mapper namespace="com.leeyunt.blogapi.mapper.UserMapper">
-    <cache eviction="LRU" flushInterval="30000" size="512" readOnly="true"/>
-    <select id="findAll" resultType="com.leeyunt.blogapi.entity.User">SELECT * FROM user</select>
-</mapper>

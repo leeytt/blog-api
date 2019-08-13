@@ -1,16 +1,16 @@
 package com.leeyunt.blogapi.mapper;
 
-import com.leeyunt.blogapi.entity.User;
+import com.leeyunt.blogapi.entity.Category;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * 管理员表 Mapper 接口
+ * 文章分类表 Mapper 接口
  * </p>
  *
  * @author leeyunt
  * @since 2019-08-13
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface CategoryMapper extends BaseMapper<Category> {
 
 }
