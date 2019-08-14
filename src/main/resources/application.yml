@@ -18,3 +18,14 @@ mybatis:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #这个配置会将执行的sql打印出来
+
+# Swagger界面内容配置 项目启动后访问：http://${host}:${port}/swagger-ui.html
+swagger:
+  title: 个人博客API接口文档 #标题
+  description: 👨‍💻我的个人博客系统API接口文档💯 #描述
+  version: 1.0.0 #版本
+  termsOfServiceUrl: http://www.leeyunt.top #这里配置是服务网站
+  contact:  #三个参数依次是姓名，个人网站，邮箱
+    name: leeyunt
+    url: http://www.leeyunt.top
+    email: 924721970@qq.com

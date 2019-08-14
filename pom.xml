@@ -30,6 +30,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <!-- mybatis依赖 -->  
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -48,12 +49,14 @@
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.1.2</version>
         </dependency>
+
         <!-- Freemarker模板引擎 -->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.28</version>
         </dependency>
+
         <!-- 数据库连接依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,24 +68,34 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
         <!-- 测试模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <!-- swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
         </dependency>
-        <!-- 这里使用 swagger-bootstrap-ui 替代了原有丑陋的ui~ -->
+        <!-- swagger-UI -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <!-- 这里使用swagger-bootstrap-ui替代了官方丑陋的UI~ -->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>1.9.0</version>
+            <version>1.9.5</version>
         </dependency>
+
+
         <!-- 热加载 工具：开发环境下文件修改后无需重启 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

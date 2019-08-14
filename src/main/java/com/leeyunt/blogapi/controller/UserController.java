@@ -7,6 +7,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,7 +22,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/blogapi/user")
-@Api(value = "管理员类控制器",tags="管理员类控制器")
+@Api(value = "管理员",tags="管理员")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -32,7 +33,7 @@ public class UserController {
      * @author leeyunt
      * @since 2019-08-13
      */
-    @RequestMapping("/getAll")
+    @RequestMapping(value="/getAll",method = RequestMethod.GET)
     @ApiOperation(value = "获取用户列表",notes = "获取用户列表")
     public List<User> getAll(){
         return userService.list();
