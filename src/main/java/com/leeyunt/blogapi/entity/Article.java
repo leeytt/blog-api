@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -14,84 +16,57 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author leeyunt
- * @since 2019-08-13
+ * @since 2019-08-14
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
+@ApiModel(value="Article对象", description="文章表")
 public class Article implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 文章id
-     */
+    @ApiModelProperty(value = "文章id")
     @TableId(value = "article_id", type = IdType.AUTO)
     private Integer articleId;
 
-    /**
-     * 文章标题
-     */
+    @ApiModelProperty(value = "文章标题")
     private String title;
 
-    /**
-     * 文章分类id
-     */
+    @ApiModelProperty(value = "文章分类id")
     private Integer categoryId;
 
-    /**
-     * 封面图url
-     */
+    @ApiModelProperty(value = "封面图url")
     private String cover;
 
-    /**
-     * 文章简介
-     */
+    @ApiModelProperty(value = "文章简介")
     private String subMessage;
 
-    /**
-     * 内容
-     */
+    @ApiModelProperty(value = "内容")
     private String content;
 
-    /**
-     * 生成的html
-     */
+    @ApiModelProperty(value = "生成的html")
     private String htmlContent;
 
-    /**
-     * 是否加密，1-是，0-否，默认0
-     */
+    @ApiModelProperty(value = "是否加密，1-是，0-否，默认0")
     private Boolean isEncrypt;
 
-    /**
-     * 创建时间
-     */
+    @ApiModelProperty(value = "创建时间")
     private LocalDateTime createTime;
 
-    /**
-     * 更新时间
-     */
+    @ApiModelProperty(value = "更新时间")
     private LocalDateTime updateTime;
 
-    /**
-     * 提交时间
-     */
+    @ApiModelProperty(value = "提交时间")
     private LocalDateTime publishTime;
 
-    /**
-     * 删除时间
-     */
+    @ApiModelProperty(value = "删除时间")
     private LocalDateTime deleteTime;
 
-    /**
-     * 状态，1-正常（发布），0-删除，2-草稿（待发布）
-     */
+    @ApiModelProperty(value = "状态，1-正常（发布），0-删除，2-草稿（待发布）")
     private Boolean status;
 
-    /**
-     * 文章阅读数
-     */
+    @ApiModelProperty(value = "文章阅读数")
     private Integer pageview;
 
 
