@@ -1,5 +1,6 @@
 package com.leeyunt.blogapi.config;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@EnableSwaggerBootstrapUI
 public class Swagger2Config {
     @Value("${swagger.title}")
     private String title;
@@ -49,7 +51,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.leeyunt.blogapi.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.leeyunt.blogapi.controller"))    //controller路径
                 .paths(PathSelectors.any())
                 .build();
     }

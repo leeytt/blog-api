@@ -21,6 +21,8 @@ mybatis-plus:
 
 # Swagger界面内容配置 项目启动后访问：http://${host}:${port}/swagger-ui.html
 swagger:
+  schemes:
+    basePath: /blogapi #项目根路径
   title: 个人博客API接口文档 #标题
   description: 👨‍💻我的个人博客系统API接口文档💯 #描述
   version: 1.0.0 #版本

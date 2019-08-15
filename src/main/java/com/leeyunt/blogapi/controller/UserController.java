@@ -18,25 +18,24 @@ import java.util.List;
  * </p>
  *
  * @author leeyunt
- * @since 2019-08-14
+ * @since 2019-08-15
  */
 @RestController
-@RequestMapping("/blogapi/user")
+@RequestMapping("/user")
 @Api(value = "管理员",tags="管理员")
 public class UserController {
     @Autowired
     private UserService userService;
 
     /**
-     * 获取用户列表
+     * 获取管理员列表
      *
      * @author leeyunt
-     * @since 2019-08-13
+     * @since 2019-08-15
      */
     @RequestMapping(value="/getAll",method = RequestMethod.GET)
-    @ApiOperation(value = "获取用户列表",notes = "获取用户列表")
+    @ApiOperation(value = "获取管理员列表",notes = "获取管理员列表")
     public List<User> getAll(){
         return userService.list();
     }
-
 }
