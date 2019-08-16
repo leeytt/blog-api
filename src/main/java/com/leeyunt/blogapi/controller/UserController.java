@@ -42,7 +42,7 @@ public class UserController {
      * @return Boolean
      */
     @PostMapping("/addUser")
-    @ApiOperation(value = "添加", notes = "添加记录")
+    @ApiOperation(value = "添加管理员", notes = "添加记录")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "username", value = "账号", defaultValue = "李四", required = true),
             @ApiImplicitParam(name = "password", value = "密码", defaultValue = "123456", required = true)
