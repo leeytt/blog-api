@@ -1,5 +1,9 @@
 #application.yml配置文件中严格区别缩进空格
+server:
+  port: 8080
+
 spring:
+  # 数据源 配置
   datasource:
     # 连接池类型 配置
     type: com.zaxxer.hikari.HikariDataSource
@@ -8,6 +12,13 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/my_blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: root
+  # 模板引擎 thymeleaf 配置
+  thymeleaf:
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
 
 # Mybatis 配置
 mybatis:
@@ -21,8 +32,6 @@ mybatis-plus:
 
 # Swagger界面内容配置 项目启动后访问：http://${host}:${port}/swagger-ui.html
 swagger:
-  schemes:
-    basePath: /blogapi #项目根路径
   title: 个人博客API接口文档 #标题
   description: 👨‍💻我的个人博客系统API接口文档💯 #描述
   version: 1.0.0 #版本

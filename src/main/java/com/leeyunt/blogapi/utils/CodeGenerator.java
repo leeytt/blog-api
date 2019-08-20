@@ -1,4 +1,4 @@
-package com.leeyunt.blogapi;
+package com.leeyunt.blogapi.utils;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -12,6 +12,14 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * mybatis-plus代码自动生成工具
+ *
+ * <p>
+ *     注意：代码生成需删除此文件！！！否则重新运行会替换你自己写的代码！！
+ * </p>
+ */
 // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
 public class CodeGenerator {
 
