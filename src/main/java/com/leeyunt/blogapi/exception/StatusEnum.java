@@ -14,9 +14,19 @@ public enum StatusEnum {
     OK(200, "操作成功"),
 
     /**
-     * 未知异常
+     * 操作失败
      */
-    UNKNOWN_ERROR(500, "服务器出错啦");
+    FAIL(-1, "操作失败"),
+
+    /**
+     * 路径错误
+     */
+    URL_ERROR(404, "404 Not Found"),
+
+    /**
+     * 服务器异常
+     */
+    SERVER_ERROR(500, "服务器出错啦");
 
     /**
      * 状态码

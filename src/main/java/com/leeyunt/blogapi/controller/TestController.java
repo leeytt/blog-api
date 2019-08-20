@@ -13,16 +13,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping("/exception")
-@Api(tags="异常处理Api")
+@Api(tags="异常处理测试Api")
 public class TestController {
     @GetMapping("/json")
     @ResponseBody
     public ResultUtil jsonException() {
-        throw new JsonException(StatusEnum.UNKNOWN_ERROR);
+        throw new JsonException(StatusEnum.OK);
     }
 
     @GetMapping("/page")
     public ModelAndView pageException() {
-        throw new PageException(StatusEnum.UNKNOWN_ERROR);
+        throw new PageException(StatusEnum.SERVER_ERROR);
     }
 }
